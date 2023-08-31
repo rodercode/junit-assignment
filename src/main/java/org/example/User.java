@@ -2,9 +2,6 @@ package org.example;
 
 public class User {
 
-    // System should provide a new user to create an account
-    // The user are required to provide these follow info
-    // Username, Password, Age
 
     private String username;
     private String password;
