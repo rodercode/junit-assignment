@@ -16,4 +16,8 @@ import java.util.List;
         public void createUser(User user) {
             users.add(user);
         }
+
+        public List<User> getAllUsers(){
+            return users;
+        }
     }

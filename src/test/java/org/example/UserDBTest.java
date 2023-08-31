@@ -16,6 +16,6 @@ class UserDBTest {
     public void shouldCreateANewUser(){
         var userdb = new UserDB();
         userdb.createUser(new User("Roder", "1234",30));
-        assertFalse(userdb.getAllUsers().isEmpty);
+        assertFalse(userdb.getAllUsers().isEmpty());
     }
 }
