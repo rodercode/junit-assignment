@@ -1,7 +1,5 @@
 package org.example;
-
-public class Convert {
-
+public class TempConverter {
     public double fahrenheitToCelsius(double fahrenheit){
         double celsius = (fahrenheit -32)/1.8;
         return roundToOneDecimalPlace(celsius);
