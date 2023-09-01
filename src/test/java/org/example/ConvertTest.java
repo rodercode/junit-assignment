@@ -13,9 +13,6 @@ class ConvertTest {
     in case of uneven results.
     */
 
-   
-
-
     //* Variable
     TempConverter convert;
     
@@ -24,10 +21,7 @@ class ConvertTest {
         convert = new TempConverter();
     }
 
-     //*test name convention: Should_ExpectedBehaviour_When_state_Undertest
-     // Should_ThrowException_When_AgeLessThan18
-     // Should_ThrowException_When_AgeLessThan18
-     @Test
+    @Test
     @DisplayName("Should convert 68 fahrenheit to 20 celsius")
     public void Should_ConvertToTwentyCelsius_When_FahrenheitIsSixtyEight() {
         assertEquals(20, convert.fahrenheitToCelsius(68));
@@ -41,8 +35,7 @@ class ConvertTest {
 
     @Test
     @DisplayName("Should convert 52 fahrenheit to 11 celsius")
-
-    public void Should_ConvertToEleven_When_FahrenheitIsFiftyTwo(){
+    public void Should_ConvertToElevenCelsius_When_FahrenheitIsFiftyTwo(){
         assertEquals(11.1,convert.fahrenheitToCelsius(52));
     }
 }

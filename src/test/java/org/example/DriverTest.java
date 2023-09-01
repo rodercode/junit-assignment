@@ -1,16 +1,13 @@
 package org.example;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class DriverTest {
-    // Check if a person is allow to drive
-    // if a person is 18 and older then it should return true
-    // which mean that a person is allow to drive
+   /*
+    Method: Is allowed to drive
 
-    
-    //test name convention: MethodName_ExpectedBehavior_StateUnderTest
+    Description: This method check if a person is allowed to drive.
+    */
 
     //* Variable
     Driver driver;
@@ -19,22 +16,18 @@ class DriverTest {
     public void setup(){
         driver = new Driver();
     }
-    
     @Test
-    @DisplayName("Should return true if a person is over 18 years old")
-    public void isAllowedToDrive_AgeOver18_True(){
-        assertTrue(driver.isAllowedToDrive(18));
+    public void Should_ReturnTrue_If_AgeIsOverEighteen(){
+        assertTrue(driver.isAllowedToDrive(22));
     }
     
     @Test
-    @DisplayName("Should return true if a person is 18 years old")
-    public void isAllowedToDrive_AgeIs18_True(){
+    public void Should_ReturnTrue_If_AgeIsEighteen(){
         assertTrue(driver.isAllowedToDrive(18));
     }
 
     @Test
-    @Display("Should return false if a person is under 18 years old")
-    public void isAllowedToDrive_AgeIsLower18_False(){
+    public void Should_ReturnFalse_If_AgeIsUnderSeventeen(){
         assertFalse(driver.isAllowedToDrive(17));
     }     
 }
