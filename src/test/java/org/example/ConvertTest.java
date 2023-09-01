@@ -8,9 +8,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConvertTest {
-    // A system should be able to convert F to C
-    // user should enter F68
-    // return C20
+    /*
+
+    Method: Fahrenheit to Celsius
+
+    Description: This method enables users to convert temperatures from Fahrenheit to Celsius.
+    Additionally, it ensures that the converted value is rounded to one decimal place
+    in case of uneven results.
+
+    */
     Convert convert;
     @BeforeEach
     public void setup(){
