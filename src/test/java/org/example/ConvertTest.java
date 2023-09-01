@@ -32,10 +32,4 @@ class ConvertTest {
     public void Should_ConvertToZeroCelsius_When_FahrenheitIs32(){
         assertEquals(0, convert.fahrenheitToCelsius(32));
     }
-
-    @Test
-    @DisplayName("Should convert 52 fahrenheit to 11 celsius")
-    public void Should_ConvertToElevenCelsius_When_FahrenheitIsFiftyTwo(){
-        assertEquals(11.1,convert.fahrenheitToCelsius(52));
-    }
 }

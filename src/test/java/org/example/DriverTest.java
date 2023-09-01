@@ -17,17 +17,18 @@ class DriverTest {
         driver = new Driver();
     }
     @Test
-    public void Should_ReturnTrue_If_AgeIsOverEighteen(){
-        assertTrue(driver.isAllowedToDrive(22));
+    public void Should_ReturnTrue_If_AgeIsEighteen_And_HasLicense(){
+        assertTrue(driver.isAllowedToDrive(18, true));
     }
     
-    @Test
-    public void Should_ReturnTrue_If_AgeIsEighteen(){
-        assertTrue(driver.isAllowedToDrive(18));
-    }
+     @Test
+     public void Should_ReturnFalse_If_AgeIsOverEighteen_And_NoLicense(){
+         assertFalse(driver.isAllowedToDrive(18, false));
+     }
 
-    @Test
-    public void Should_ReturnFalse_If_AgeIsUnderSeventeen(){
-        assertFalse(driver.isAllowedToDrive(17));
-    }     
+     @Test
+     public void Should_ReturnFalse_If_AgeIsUnderSeventeen_And_HasLicense(){
+         assertFalse(driver.isAllowedToDrive(17,false));
+     } 
+    
 }
